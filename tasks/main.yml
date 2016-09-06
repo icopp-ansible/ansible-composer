@@ -1,0 +1,6 @@
+---
+- name: Install Composer via Homebrew
+  package:
+    name: homebrew/php/composer
+    state: latest
+  when: ansible_os_family == "Darwin"
